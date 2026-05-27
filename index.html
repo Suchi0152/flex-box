@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Flexbox Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar">
+
+<a href="#home">Home</a>
+<a href="#flexbox">Flexbox</a>
+<a href="#layouts">Layouts</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+<!-- Hero Section -->
+
+<section id="home" class="hero">
+
+<div class="hero-text">
+
+<h1>Responsive Website Using Flexbox</h1>
+
+<p>
+This website demonstrates Flexbox fundamentals,
+responsive layouts and media queries.
+</p>
+
+<button id="changeBtn">
+Change Background
+</button>
+
+</div>
+
+<div class="hero-image">
+
+<img src="ai.webp"
+alt="hero image">
+
+</div>
+
+</section>
+
+
+<!-- Flexbox Section -->
+
+<section id="flexbox" class="section">
+
+<h2>Flexbox Fundamentals</h2>
+
+<div class="flex-container">
+
+<div class="flex-item" onclick="showText(1)">
+Item 1
+</div>
+
+<div class="flex-item" onclick="showText(2)">
+Item 2
+</div>
+
+<div class="flex-item" onclick="showText(3)">
+Item 3
+</div>
+
+</div>
+
+<p id="displayText"></p>
+
+</section>
+
+
+<!-- Layout Section -->
+
+<section id="layouts" class="section">
+
+<h2>Responsive Layout Cards</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Card 1</h3>
+<p>Responsive card using flexbox.</p>
+</div>
+
+<div class="card">
+<h3>Card 2</h3>
+<p>Automatically adjusts size.</p>
+</div>
+
+<div class="card">
+<h3>Card 3</h3>
+<p>Works on desktop and mobile.</p>
+</div>
+
+<div class="card">
+<h3>Card 4</h3>
+<p>Media query support included.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Gallery -->
+
+<section id="gallery" class="section">
+
+<h2>Gallery</h2>
+
+<div class="image-container">
+
+<img src="https://picsum.photos/700/300"
+alt="gallery image">
+
+</div>
+
+</section>
+
+
+<!-- Contact -->
+
+<section id="contact" class="section">
+
+<h2>Contact</h2>
+
+<div class="contact-box">
+
+<p>Email : kanigelpulasuchitra@gmail.com</p>
+
+<p>Phone : +91 9999999999</p>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
