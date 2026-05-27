@@ -16,16 +16,14 @@ overflow-x:hidden;
 
 .navbar{
 display:flex;
-flex-direction:row;
 justify-content:center;
 align-items:center;
+gap:20px;
 background:black;
 padding:15px;
-gap:10px;
 position:sticky;
 top:0;
-z-index:1000;
-width:100%;
+z-index:100;
 overflow-x:auto;
 white-space:nowrap;
 }
@@ -38,9 +36,8 @@ display:none;
 text-decoration:none;
 color:white;
 padding:10px 15px;
-border-radius:5px;
 flex-shrink:0;
-transition:.3s;
+border-radius:5px;
 }
 
 .navbar a:hover{
@@ -49,7 +46,7 @@ color:black;
 }
 
 
-/* Hero Section */
+/* Hero */
 
 .hero{
 display:flex;
@@ -65,14 +62,6 @@ flex-wrap:wrap;
 .hero-text{
 flex:1;
 min-width:280px;
-}
-
-.hero-text h1{
-margin-bottom:20px;
-}
-
-.hero-text p{
-line-height:1.7;
 }
 
 .hero-image{
@@ -97,9 +86,8 @@ margin-top:20px;
 background:black;
 color:white;
 border:none;
-border-radius:5px;
 cursor:pointer;
-transition:.4s;
+border-radius:5px;
 }
 
 button:hover{
@@ -119,19 +107,18 @@ margin-bottom:30px;
 }
 
 
-/* Flexbox Items */
+/* Flex Items */
 
 .flex-container{
 display:flex;
-gap:20px;
 flex-wrap:wrap;
-justify-content:center;
+gap:20px;
 }
 
 .flex-item{
 background:#4CAF50;
-color:white;
 padding:30px;
+color:white;
 text-align:center;
 flex:1 1 250px;
 cursor:pointer;
@@ -157,15 +144,14 @@ font-weight:bold;
 display:flex;
 gap:20px;
 flex-wrap:wrap;
-justify-content:center;
 }
 
 .card{
 background:white;
 padding:25px;
 flex:1 1 250px;
-border-radius:10px;
 text-align:center;
+border-radius:10px;
 box-shadow:0 0 10px lightgray;
 border:3px solid transparent;
 transition:.5s;
@@ -182,7 +168,6 @@ transform:translateY(-8px);
 .image-container{
 display:flex;
 justify-content:center;
-align-items:center;
 }
 
 .image-container img{
@@ -199,10 +184,10 @@ border-radius:10px;
 background:#4CAF50;
 color:white;
 padding:25px;
-text-align:center;
 border-radius:10px;
 max-width:500px;
 margin:auto;
+text-align:center;
 }
 
 
@@ -215,10 +200,6 @@ flex-direction:column;
 text-align:center;
 }
 
-.hero-image img{
-max-width:300px;
-}
-
 }
 
 
@@ -226,27 +207,17 @@ max-width:300px;
 
 @media(max-width:768px){
 
-.navbar{
-flex-direction:row !important;
-justify-content:flex-start;
-overflow-x:auto;
-white-space:nowrap;
-}
-
 .hero{
-padding:30px;
+padding:25px;
 }
 
-.flex-item{
-flex:1 1 100%;
-}
-
+.flex-item,
 .card{
 flex:1 1 100%;
 }
 
 .hero-image img{
-max-width:250px;
+max-width:280px;
 }
 
 }
@@ -257,30 +228,24 @@ max-width:250px;
 @media(max-width:480px){
 
 .navbar{
-flex-direction:row !important;
 justify-content:flex-start;
-overflow-x:auto;
+padding:10px;
 }
 
 .navbar a{
 font-size:14px;
-padding:8px;
 }
 
 .hero h1{
 font-size:26px;
 }
 
-.hero p{
-font-size:14px;
+.hero-image img{
+max-width:230px;
 }
 
 button{
 width:100%;
-}
-
-.hero-image img{
-max-width:220px;
 }
 
 }
