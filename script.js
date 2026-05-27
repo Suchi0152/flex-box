@@ -1,34 +1,19 @@
-const button=document.getElementById("changeBtn");
-
-button.addEventListener("click",function(){
-
-document.body.style.background="skyblue";
-
+document.getElementById("changeBtn").addEventListener("click", function(){
+document.body.style.background = "skyblue";
 });
 
-function showText(number){
+function showText(n){
 
-let text=document.getElementById("displayText");
+let text = document.getElementById("displayText");
 
-if(number===1){
-
-text.innerHTML=
-"Item 1: Flexbox allows easy alignment of webpage elements.";
-
+if(n === 1){
+text.innerHTML = "Item 1 clicked: Flexbox is used for layout alignment.";
 }
-
-else if(number===2){
-
-text.innerHTML=
-"Item 2: Responsive layouts automatically adjust for devices.";
-
+else if(n === 2){
+text.innerHTML = "Item 2 clicked: Responsive design adjusts to screen size.";
 }
-
 else{
-
-text.innerHTML=
-"Item 3: Media queries help websites work on mobile and desktop.";
-
+text.innerHTML = "Item 3 clicked: Media queries help mobile responsiveness.";
 }
 
 }
